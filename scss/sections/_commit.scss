@@ -1,0 +1,133 @@
+.commit {
+	max-width: 1110px;
+	margin: 0 auto;
+	margin-top: 168px;
+
+	display: flex;
+	align-items: center;
+	gap: 125px;
+
+	.commit__right {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 32px;
+
+		.commit__title {
+			font-family: "Fraunces_9pt-Black";
+
+			font-size: 40px;
+			line-height: 48px;
+
+			color: #333d4b;
+		}
+		.commit__description {
+			font-family: "Barlow-Regular";
+
+			font-size: 16px;
+			line-height: 26px;
+
+			color: #333d4b;
+
+			opacity: 0.6;
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.commit {
+		gap: 100px;
+		.commit__left {
+			max-width: 390px;
+			max-height: 485px;
+		}
+		.commit__right {
+			.commit__title {
+				max-width: 316px;
+				font-size: 32px;
+				line-height: 48px;
+			}
+			.commit__description {
+				max-width: 490px;
+				font-size: 15px;
+				line-height: 25px;
+				.commit-tab {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 830px) {
+	.commit {
+		gap: 70px;
+
+		.commit__left {
+			max-width: 350px;
+			max-height: 480px;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.commit {
+		margin-top: 144px;
+
+		gap: 69px;
+
+		.commit__left {
+			max-width: 281px;
+			max-height: 470px;
+		}
+		.commit__right {
+			gap: 30px;
+
+			.commit__title {
+				max-width: 286px;
+
+				font-size: 31px;
+				line-height: 46px;
+			}
+			.commit__description {
+				max-width: 339px;
+
+				font-size: 15px;
+				line-height: 25px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.commit {
+          
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 48px;
+
+		.commit__left {
+
+			max-width: 327px;
+			max-height: 400px;
+		}
+
+		.commit__right {
+
+			align-items: center;
+			text-align: center;
+
+			.commit__title {
+				max-width: 327px;
+
+				font-size: 30px;
+				line-height: 45px;
+
+			}
+			.commit__description {
+				max-width: 327px;
+			}
+		}
+	}
+}

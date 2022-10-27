@@ -1,0 +1,18 @@
+// for all elemets
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+
+// For container box
+
+.container {
+     max-width: 1320px;
+     width: 100%;
+     padding: 0 20px;
+     margin: 0 auto;
+}

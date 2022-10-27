@@ -1,0 +1,166 @@
+.collection {
+	margin-top: 200px;
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__title {
+		position: absolute;
+
+		display: block;
+
+		z-index: -1;
+	}
+
+	&__cards {
+		margin-top: 126px;
+
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		&__one {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.collection__topic {
+				margin-top: 71px;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 24px;
+
+				.collection__topic__title {
+					font-family: "Fraunces_9pt-Black";
+					font-size: 24px;
+					line-height: 32px;
+					text-align: center;
+
+					color: #333d4b;
+				}
+				.collection__topic__description {
+					max-width: 255px;
+					width: 100%;
+
+					font-family: "Barlow-Regular";
+					font-size: 16px;
+					line-height: 26px;
+					text-align: center;
+
+					color: #333d4b;
+				}
+			}
+		}
+	}
+}
+
+// responsive
+@media (max-width: 1200px) {
+	.collection {
+		margin-top: 150px;
+
+		&__title {
+			width: 100%;
+			padding: 0px 20px;
+
+			display: block;
+		}
+
+		&__cards {
+			flex-direction: column;
+
+			.collection__cards__one {
+				flex-direction: row;
+				text-align: center;
+				gap: 36px;
+
+				.collection-img {
+					width: 255px;
+					height: 193px;
+				}
+
+				.collection__topic {
+					margin-top: 0px;
+
+					align-items: flex-start;
+
+					.collection__topic__title {
+						text-align: start;
+					}
+					.collection__topic__description {
+						max-width: 282px;
+						width: 100%;
+						text-align: start;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.collection {
+		&__title {
+			padding: 0px 40px;
+
+			max-width: 689px;
+			width: 100%;
+
+			display: block;
+		}
+		&__cards {
+			margin-top: 59px;
+			.collection__cards__one {
+				.collection__topic {
+					.collection__topic__title {
+						font-size: 24px;
+						line-height: 32px;
+					}
+					.collection__topic__description {
+						font-size: 15px;
+						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.collection {
+		&__title {
+			padding: 0px 40px;
+
+			max-width: 689px;
+			width: 100%;
+
+			display: block;
+		}
+		&__cards {
+			margin-top: 63px;
+			.collection__cards__one {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 25px;
+				.collection__topic {
+					align-items: center;
+					.collection__topic__title {
+						font-size: 24px;
+						line-height: 32px;
+						text-align: center;
+					}
+					.collection__topic__description {
+						font-size: 15px;
+						line-height: 25px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

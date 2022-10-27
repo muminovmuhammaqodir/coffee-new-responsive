@@ -1,0 +1,35 @@
+//  Contents sizes
+
+$title-size: 24px;
+$secondary-title-size: 32px;
+$description-size: 16px;
+
+// content fonts
+
+$barlow-bold: "Barlow-bold";
+
+// Colors
+
+$main-bg-color: #0e8784;
+$main-text-color: #fefcf7;
+$headerbackground-color: #2c343e;
+
+// Templates for displays
+
+// 1) row
+%dipslay-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+// 2) column
+
+%dipslay-column {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+

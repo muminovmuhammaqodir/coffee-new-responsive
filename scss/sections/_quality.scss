@@ -1,0 +1,147 @@
+.quality {
+	position: relative;
+	width: 100%;
+
+	margin-top: 256px;
+	padding: 88px 15px 176px 85px;
+
+	background: #2c343e;
+	border-radius: 10px;
+
+	display: flex;
+	align-items: center;
+	gap: 125px;
+
+	.quality__block {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+
+		.quality__title {
+			font-family: "Fraunces_9pt-Black";
+			font-size: 40px;
+			line-height: 48px;
+
+			color: #fefcf7;
+		}
+		.quality__description {
+			max-width: 540px;
+
+			font-family: "Barlow-Regular";
+
+			font-size: 16px;
+			line-height: 26px;
+
+			color: #fefcf7;
+
+			opacity: 0.6;
+		}
+	}
+	.quality__img {
+		position: absolute;
+		right: 85px;
+		top: -88px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.quality {
+		padding: 88px 15px 176px 76px;
+
+		.quality__block {
+			.quality__title {
+				max-width: 500px;
+			}
+			.quality__description {
+				max-width: 520px;
+			}
+		}
+		.quality__img {
+			top: -78px;
+			right: 76px;
+			max-width: 420px;
+			height: 460px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1125px) {
+	.quality {
+		margin-top: 325px;
+
+		padding: 224px 74px 67px;
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 80px;
+
+		.quality__block {
+			flex-direction: column;
+			align-items: center;
+			gap: 24px;
+
+			.quality__title {
+				max-width: 413px;
+
+				font-size: 32px;
+				line-height: 48px;
+
+				text-align: center;
+			}
+			.quality__description {
+				max-width: 5404px;
+
+				text-align: center;
+
+				font-size: 15px;
+				line-height: 25px;
+			}
+		}
+		.quality__img {
+			position: relative;
+
+			max-width: 573px;
+			width: 100%;
+			max-height: 320px;
+
+			top: 0;
+			right: 0;
+			left: 0;
+
+			margin-top: -400px;
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.quality {
+		padding: 224px 50px 67px;
+		.quality-img {
+			max-width: 435px;
+			width: 100%;
+			max-height: 260px;
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.quality {
+		margin-top: 198px;
+
+		padding: 324px 24px 61px;
+
+		gap: 64px;
+
+		.quality__block {
+			gap: 24px;
+
+			.quality__title {
+				font-size: 28px;
+				line-height: 28px;
+			}
+		}
+		.quality__img {
+			max-width: 279px;
+			width: 100%;
+			max-height: 156px;
+		}
+	}
+}

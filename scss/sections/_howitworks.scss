@@ -1,0 +1,154 @@
+.howitworks {
+	max-width: 1045px;
+	width: 100%;
+	margin: 0 auto;
+
+	margin-top: 336px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	&__title {
+		font-family: "Fraunces_9pt-Black";
+
+		font-size: 24px;
+		line-height: 32px;
+
+		color: #83888f;
+	}
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 67px;
+
+		&__cards {
+			display: flex;
+			align-items: center;
+			gap: 95px;
+
+			.howitworks-card {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+
+				.howitworks__number {
+					margin-bottom: 38px;
+
+					font-family: "Fraunces_9pt-Black";
+					font-size: 72px;
+					line-height: 72px;
+
+					color: #fdd6ba;
+				}
+				.howitworks__card__title {
+					margin-bottom: 42px;
+
+					font-family: "Fraunces_9pt-Black";
+
+					font-size: 32px;
+					line-height: 36px;
+
+					color: #333d4b;
+				}
+				.howitworks__card__description {
+					max-width: 285px;
+					width: 100%;
+
+					font-family: "Barlow-Regular";
+
+					font-size: 16px;
+					line-height: 26px;
+
+					color: #333d4b;
+				}
+			}
+		}
+		.choose__link {
+			max-width: 217px;
+			width: 100%;
+		}
+	}
+}
+
+// responsive
+@media (max-width: 830px) {
+	.howitworks {
+		.howitworks-img {
+			max-width: 700px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.howitworks {
+		margin-top: 434px;
+		.howitworks__main {
+			.howitworks-img {
+				max-width: 497px;
+				height: 22px;
+			}
+			.howitworks__main__cards {
+				gap: 10px;
+
+				.howitworks-card {
+					.howitworks__number {
+						margin-top: 42px;
+					}
+					.howitworks__card__title {
+						margin-top: 38px;
+
+						font-size: 28px;
+						line-height: 32px;
+					}
+					.howitworks__card__description {
+						font-size: 15px;
+						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.howitworks {
+		margin-top: 1017px;
+
+		.howitworks__title {
+			text-align: center;
+		}
+		.howitworks__main {
+			align-items: center;
+			.howitworks-img {
+				display: none;
+			}
+			.howitworks__main__cards {
+				margin-top: 80px;
+
+				flex-direction: column;
+				align-items: center;
+				gap: 56px;
+
+				.howitworks-card {
+					align-items: center;
+					gap: 24px;
+					.howitworks__number {
+						margin-top: 0px;
+						margin-bottom: 0px;
+					}
+					.howitworks__card__title {
+						margin-top: 0px;
+						margin-bottom: 0px;
+						text-align: center;
+						font-size: 28px;
+						line-height: 32px;
+					}
+					.howitworks__card__description {
+						font-size: 15px;
+						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+}

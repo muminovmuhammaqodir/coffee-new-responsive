@@ -1,0 +1,295 @@
+.menu {
+	margin-top: 168px;
+	padding: 0px 80px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	&__aside {
+		margin-top: 12px;
+		margin-right: 10px;
+	}
+
+	&__list {
+		max-width: 255px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		list-style: none;
+	}
+
+	&__item {
+		display: flex;
+		align-items: flex-start;
+		gap: 25px;
+	}
+	&__text {
+		font-family: "Fraunces_9pt-Black";
+		font-size: 24px;
+		line-height: 32px;
+
+		color: #333d4b;
+		opacity: 0.6;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:active,
+		&:focus {
+			opacity: 0.9;
+			cursor: pointer;
+		}
+	}
+	&.menu__line {
+		max-width: 255px;
+		width: 100%;
+
+		background: #83888f;
+		mix-blend-mode: normal;
+		opacity: 0.25;
+	}
+
+	// cards qismi
+
+	.menu__cards {
+		max-width: 730px;
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 88px;
+	}
+	&__card {
+		max-width: 730px;
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		gap: 56px;
+
+		&__title {
+			max-width: 730px;
+			width: 100%;
+
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&--title {
+		font-family: "Fraunces_9pt-Black";
+		font-size: 24px;
+		line-height: 32px;
+
+		color: #333d4b;
+		opacity: 0.6;
+	}
+	.card__box {
+		display: flex;
+		align-items: center;
+		gap: 23px;
+
+		.card__one {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+
+			padding: 32px 20px 84px;
+
+			background: #f4f1eb;
+			border-radius: 8px;
+
+			&--title {
+				font-family: "Fraunces_9pt-Black";
+				font-size: 24px;
+				line-height: 32px;
+
+				color: #333d4b;
+			}
+			&--text {
+				font-family: "Barlow-Regular";
+				font-size: 16px;
+				line-height: 26px;
+
+				color: #333d4b;
+			}
+
+			&:hover {
+				background: #fdd6ba;
+				border-radius: 8px;
+
+				transition: all 0.8s ease;
+			}
+		}
+		#for__nth {
+			background: #0e8784;
+			border-radius: 8px;
+			.for__color {
+				color: #fefcf7;
+			}
+
+			&:hover {
+				background: #fdd6ba;
+				border-radius: 8px;
+
+				transition: all 0.8s ease;
+
+				.for__color {
+					color: #333d4b;
+				}
+			}
+		}
+	}
+
+	// order qismi
+	.order {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 40px;
+
+		&__block {
+			padding: 27px 60px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+
+			background: #2c343e;
+			border-radius: 10px;
+		}
+		&__title {
+			font-family: "Barlow-Regular";
+
+			font-size: 16px;
+			line-height: 26px;
+
+			text-transform: uppercase;
+
+			color: #ffffff;
+			opacity: 0.4;
+		}
+		&__blockquote {
+			font-family: "Fraunces_9pt-Black";
+
+			font-size: 24px;
+			line-height: 40px;
+
+			color: #ffffff;
+		}
+		&__span {
+			color: #0e8784;
+		}
+	}
+}
+
+// responsive
+
+@media only screen and (max-width: 1125px) {
+	.menu {
+		padding: 0px;
+		&__aside {
+			margin-right: 15px;
+		}
+		&__list {
+			max-width: 230px;
+		}
+		&__item {
+			gap: 15px;
+		}
+		&__line {
+			width: 210px;
+		}
+	}
+}
+
+@media only screen and (max-width: 830px) {
+	.menu {
+		width: 100%;
+		margin: 144px auto 0px;
+		&__aside {
+			display: none;
+		}
+		&__cards {
+			max-width: 830px;
+			width: 100%;
+			margin: 0 auto;
+			gap: 100px;
+		}
+		&__card {
+			gap: 40px;
+			align-items: center;
+		}
+		&--title {
+			font-size: 32px;
+			line-height: 48px;
+		}
+		.card__box {
+			gap: 10px;
+
+			.card__one {
+				padding: 32px 15px 84px;
+
+				&--title {
+					font-size: 24px;
+					line-height: 32px;
+				}
+				&--text {
+					max-width: 172px;
+					width: 100%;
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+		}
+		.order {
+			align-items: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.menu {
+		margin-top: 120px;
+
+		&__cards {
+			gap: 100px;
+		}
+		&--title {
+			font-size: 24px;
+			line-height: 28px;
+		}
+		&__card {
+			gap: 32px;
+			.card__box {
+				flex-direction: column;
+				gap: 16px;
+
+				.card__one {
+					width: 100%;
+					padding: 24px 25px;
+
+					&--text {
+						max-width: 278px;
+					}
+				}
+			}
+		}
+		.order {
+			&__block {
+				padding: 32px 24px;
+			}
+
+			&__blockquote {
+				font-size: 22px;
+				line-height: 40px;
+			}
+		}
+	}
+}

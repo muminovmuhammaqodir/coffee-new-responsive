@@ -1,0 +1,66 @@
+.subscribe__box {
+	margin-top: 43px;
+
+	padding: 134px 15px 134px 85px;
+
+	background: #a2a2a2;
+	border-radius: 10px;
+
+	background-image: url("../../images/subscribe-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.subscribe {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+
+		&__title {
+			margin: 0;
+			font-family: "Fraunces_9pt-black";
+			font-size: 72px;
+			line-height: 72px;
+
+			color: #fefcf7;
+		}
+		&__description {
+			max-width: 445px;
+
+			font-family: "Barlow-Regular";
+			font-size: 16px;
+			line-height: 26px;
+
+			color: #fefcf7;
+
+			opacity: 0.6;
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.subscribe__box {
+		margin-top: 40px;
+		padding: 101px 24px 136px;
+		background-position: center;
+		.subscribe {
+			align-items: center;
+			gap: 22px;
+
+			&__title {
+				max-width: 279px;
+
+				font-size: 40px;
+				line-height: 40px;
+
+				text-align: center;
+			}
+			&__description {
+			max-width: 279px;
+
+				font-size: 15px;
+				line-height: 25px;
+
+				text-align: center;
+			}
+		}
+	}
+}

@@ -33,24 +33,89 @@
 			}
 		}
 	}
-	.hamburger {
+	#hamburger {
+		display: none;
+	}
+
+	.mobile {
 		display: none;
 	}
 }
 
 //1) responsive width
+// @media only screen and (min-width: 1380px) {
+//      #hamburger {
+//           display: none;
+//      }
+// 	#hamburgerMenu {
+// 		display: none;
+// 	}
+// }
+
 @media (max-width: 576px) {
 	.header {
-          .header__logo>img {
-               width: 163px;
-               height: 18px;
-          }
-          margin-top: 32px;
-          .navbar {
-               display: none;
-          }
-          .hamburger {
-               display: block;
-          }
+		.header__logo > img {
+			width: 163px;
+			height: 18px;
+		}
+		margin-top: 32px;
+		.navbar {
+			display: none;
+		}
+		#hamburger {
+			display: block;
+		}
+		.mobile--active {
+			display: flex;
+		}
+		.mobile {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+
+			max-width: 576px;
+			width: 100%;
+
+			padding: 32px 25px 377px;
+
+			flex-direction: column;
+			align-items: center;
+			gap: 80px;
+
+			background: linear-gradient(
+				180deg,
+				#fefcf7 45%,
+				rgba(254, 252, 247, 0.504981) 55.94%
+			);
+			transform: matrix(1, 0, 0, 1, 0, 0);
+			.imgs {
+				max-width: 576px;
+				width: 100%;
+
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.mobile__list {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 32px;
+
+				list-style: none;
+
+				.mobile__link {
+					font-family: "Fraunces_9pt-Black";
+
+					font-size: 24px;
+					line-height: 32px;
+
+					text-align: center;
+					text-decoration: none;
+
+					color: #333d4b;
+				}
+			}
+		}
 	}
 }

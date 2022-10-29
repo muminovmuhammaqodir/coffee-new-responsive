@@ -71,11 +71,67 @@
 	}
 }
 
+.subscribe__works {
+	max-width: 1280px;
+	width: 100%;
+
+	margin: 0;
+	margin-top: 168px;
+	padding: 100px 150px 99px 85px;
+
+	background: #2c343e;
+	border-radius: 10px;
+	.subscribe__main {
+		.subscibe__card-one {
+               gap: 25px;
+			.scb-title {
+				margin: 0px;
+
+				font-size: 28px;
+				line-height: 32px;
+
+				color: #ffffff;
+			}
+			.scb-text {
+				color: #ffffff;
+				opacity: 0.6;
+			}
+		}
+	}
+}
+
 // responsive
+@media only screen and (max-width: 1200px) {
+	.subscribe__works {
+		padding: 90px 45px 99px 45px;
+		.subscribe__main {
+			.subscibe__img {
+				width: 640px;
+			}
+		}
+	}
+}
+
 @media (max-width: 830px) {
 	.howitworks {
 		.howitworks-img {
 			max-width: 700px;
+		}
+	}
+	.subscribe__works {
+		margin: 0;
+		margin-top: 168px;
+		padding: 90px 65px 99px 65px;
+
+		background: #2c343e;
+		border-radius: 10px;
+		.subscribe__main {
+			.subscibe__img {
+				width: 600px;
+			}
+			.subscribe__card {
+				gap: 30px;
+			}
 		}
 	}
 }
@@ -103,6 +159,43 @@
 					.howitworks__card__description {
 						font-size: 15px;
 						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+	.subscribe__works {
+		margin-top: 144px;
+		padding: 97px 20px 40px;
+
+		.subscribe__main {
+			.subscibe__img {
+				width: 457px;
+			}
+			.subscribe__card {
+				gap: 10px;
+				.subscibe__card-one {
+					gap: 38px;
+					align-items: flex-start;
+
+					.subscibe__number {
+						margin: 0px;
+					}
+					.scb-title {
+						margin: 0px;
+
+						font-size: 28px;
+						line-height: 32px;
+
+						color: #ffffff;
+					}
+					.scb-text {
+						font-size: 15px;
+						line-height: 25px;
+						text-align: center;
+
+						color: #ffffff;
+						opacity: 0.6;
 					}
 				}
 			}
@@ -146,6 +239,22 @@
 					.howitworks__card__description {
 						font-size: 15px;
 						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+	.subscribe__works {
+		margin-top: 144px;
+
+		.subscribe__main {
+			.subscribe__card {
+				max-width: 327px;
+				.scb-title {
+					max-width: 327px;
+					width: 100%;
+					.br {
+						display: none;
 					}
 				}
 			}

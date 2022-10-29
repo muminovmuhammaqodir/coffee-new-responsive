@@ -29,12 +29,42 @@
 				</ul>
 			</nav>
 
-			<div class="hamburger">
+			<div id="hamburger">
 				<img
+					id="hamburgerMenu"
+					style="z-index: 1000"
 					src="./images/hamburger.svg"
 					alt="hamburger-menu"
 					width="16"
 					height="15" />
+			</div>
+
+			<div class="mobile">
+				<div class="imgs">
+					<img
+						src="../images/mobile.svg"
+						alt="hamburger logo"
+						width="163"
+						height="18" />
+					<img  id="close-btn"
+						src="../images/close__tbn.svg"
+						alt="close btn"
+						width="14"
+						height="13px" />
+				</div>
+				<ul class="mobile__list">
+					<li class="mobile__item">
+						<a class="mobile__link" href="./index.html">HOME</a>
+					</li>
+					<li class="mobile__item">
+						<a class="mobile__link" href="./pages/about.html">ABOUT US</a>
+					</li>
+					<li class="mobile__item">
+						<a class="mobile__link" href="./pages/create.html"
+							>Create Your Plan</a
+						>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<main>
@@ -264,10 +294,12 @@
 							<a class="footer__link" href="#">HOME</a>
 						</li>
 						<li class="footer__item">
-							<a class="footer__link" href="./pages/about.html">ABOUT US</a>
+							<a class="footer__link" href="./pages/about.html"
+								>ABOUT US</a
+							>
 						</li>
 						<li class="footer__item">
-							<a class="footer__link" href="#">Create your plan</a>
+							<a class="footer__link" href="./pages/create.html">Create your plan</a>
 						</li>
 					</ul>
 				</div>
@@ -296,5 +328,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./main.js"></script>
 	</body>
 </html>

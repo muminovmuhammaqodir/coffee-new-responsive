@@ -1,0 +1,123 @@
+.modcontainer {
+	position: absolute;
+	max-width: 540px;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.modal {
+	position: relative;
+	display: none;
+
+	margin-top: 50px;
+	max-width: 540px;
+	width: 100%;
+
+	flex-direction: column;
+	align-items: center;
+	gap: 47px;
+
+	z-index: 1000;
+
+	&__header {
+		max-width: 540px;
+		width: 100%;
+
+		padding: 48px 148px 40px 56px;
+
+		background: #333d4b;
+		border-radius: 8px 8px 0px 0px;
+	}
+	&__title {
+		max-width: 336px;
+		width: 100%;
+
+		font-family: "Fraunces_9pt-Black";
+		font-size: 40px;
+		line-height: 48px;
+
+		color: #ffffff;
+	}
+	&__content {
+		margin-top: 10px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 7px;
+	}
+	&--title {
+		max-width: 428px;
+
+		font-family: "Fraunces_9pt-black";
+
+		font-size: 24px;
+		line-height: 40px;
+
+		color: #83888f;
+
+		.modal__snp {
+			color: #0e8784;
+		}
+	}
+	&__description {
+		max-width: 428px;
+		width: 100%;
+
+		font-family: "Barlow-Regular";
+
+		font-size: 16px;
+		line-height: 26px;
+
+		color: #333d4b;
+
+		opacity: 0.6;
+	}
+	&__prise {
+		display: flex;
+		align-items: center;
+		gap: 13px;
+
+		.modal--prise {
+			font-family: "Fraunces_9pt-Black";
+
+			font-size: 32px;
+			line-height: 36px;
+
+			color: #333d4b;
+		}
+	}
+	&__btn {
+		padding: 15px 64px;
+
+		background: #66d2cf;
+		border-radius: 6px;
+
+		font-family: "Fraunces_9pt-Black";
+
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+		text-decoration: none;
+
+		color: #fefcf7;
+
+		&:hover {
+			background: #0e8784;
+		}
+		&:active {
+			color: #000;
+		}
+	}
+	#modalcls {
+		position: absolute;
+		right: -10px;
+		top: -50px;
+	}
+}
+
+.modal-active {
+	display: flex;
+	z-index: 10;
+}

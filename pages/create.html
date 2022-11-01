@@ -30,7 +30,9 @@
 						<a href="../pages/about.html" class="nav__link">ABOUT US</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link">Create your plan</a>
+						<a href="#" id="modalbtn" class="nav__link"
+							>Create your plan</a
+						>
 					</li>
 				</ul>
 			</nav>
@@ -69,6 +71,30 @@
 						<a class="mobile__link" href="#">Create Your Plan</a>
 					</li>
 				</ul>
+			</div>
+
+			<div style="z-index: 10000" class="modal modcontainer">
+				<div class="modal__header">
+					<h2 class="modal__title">Order Summary</h2>
+				</div>
+				<img src="../images/close__tbn.svg" alt="close btn" id="modalcls" />
+				<div class="modal__content">
+					<h3 class="modal--title">
+						“I drink my coffee as <span class="modal__snp">Filter</span> ,
+						with a <span class="modal__snp">Decaf</span> type of bean.
+						250g ground ala <span class="modal__snp"> Cafetiére</span> ,
+						sent to me <span class="modal__snp"> Every Week</span> .”
+					</h3>
+					<p class="modal__description">
+						Is this correct? You can proceed to checkout or go back to
+						plan selection if something is off. Subscription discount
+						codes can also be redeemed at the checkout.
+					</p>
+				</div>
+				<div class="modal__prise">
+					<span class="modal--prise">$14.00 / mo</span>
+					<a href="#!" class="modal__btn">Checkout</a>
+				</div>
 			</div>
 		</header>
 		<main>
